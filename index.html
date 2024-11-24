@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jamoliddin Shaykhov - Personal Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="toggle-container">
+        <label>
+            <input type="checkbox" id="theme-toggle">
+            Dark Mode
+        </label>
+    </div>
+    <header class="glass">
+        <h1>Jamoliddin Shaykhov</h1>
+    </header>
+    <div class="container glass">
+        <p>
+            Hi! I am Jamoliddin Shaykhov, a student at IUT. I am passionate about <b>technology</b> and <b>learning</b> new skills to enhance my career.
+        </p>
+
+        <h2>Classes I'm Taking Right Now</h2>
+        <ul>
+            <li>Software Engineering [202402-CSE4070-001]</li>
+            <li>Distinguished Lecture in Social Science and Art [202402-NTS4070-001]</li>
+            <li>Introduction to IT [202402-SOC1010-001]</li>
+            <li>Multimedia Computing [202402-SOC4020-002]</li>
+            <li>Artificial Intelligence [202402-SOC4040-002]</li>
+            <li>Blockchain Basics and Platforms [202402-SOC4190-001]</li>
+        </ul>
+
+        <h2>My 3 Favorite TV Shows</h2>
+        <ol>
+            <li>
+                The Sopranos 
+                <a href="https://www.imdb.com/title/tt0141842/" target="_blank">IMDB Page</a>
+                <br>
+                <img src="https://m.media-amazon.com/images/M/MV5BNjJkMmFjZjQtNDM4Ni00ZmQ1LTgwNGItMjBjYjRmYmY4Y2JlXkEyXkFqcGc@._V1_QL75_UX380_CR0,4,380,562_.jpg" alt="The Sopranos Poster" style="width:200px;">
+            </li>
+            <li>
+                Breaking Bad
+                <a href="https://www.imdb.com/title/tt0903747/" target="_blank">IMDB Page</a>
+                <br>
+                <img src="https://fr.web.img5.acsta.net/pictures/19/06/18/12/11/3956503.jpg" alt="Breaking Bad Poster" style="width:200px;">
+            </li>
+            <li>
+                Stranger Things
+                <a href="https://www.imdb.com/title/tt4574334/" target="_blank">IMDB Page</a>
+                <br>
+                <img src="https://i.scdn.co/image/ab67616d0000b273bd0db295c0164ddbc0584ebb" alt="Stranger Things Poster" style="width:200px;">
+            </li>
+        </ol>
+
+        <h2>Images Representing My Mood</h2>
+        <div class="mood-images">
+            <div>
+                <b>When I'm Happy:</b><br>
+                <img src="https://memi.klev.club/uploads/posts/2024-05/memi-klev-club-bmhn-p-memi-s-grustnim-i-ulibayushchimsya-muzhiko-5.jpg" alt="Happy Mood" style="width:200px;">
+            </div>
+            <div>
+                <b>When I'm Sad:</b><br>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNC7XjfyMdcZbES6RjgwKN9H7d9N2BhjEt5w&s" alt="Sad Mood" style="width:200px;">
+            </div>
+        </div>
+
+        <h2>Something Interesting About My Neighbor</h2>
+        <p>
+            The person next to me is really good at solving puzzles and loves mountain hiking!
+        </p>
+    </div>
+    <footer class="glass">
+        <p>&copy; 2024 Jamoliddin Shaykhov</p>
+    </footer>
+    <script>
+        const toggle = document.getElementById('theme-toggle');
+        toggle.addEventListener('change', () => {
+            document.body.toggleAttribute('data-theme');
+        });
+    </script>
+</body>
+</html>

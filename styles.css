@@ -1,0 +1,105 @@
+:root {
+    --background-color: #ffffff; /* White background for day theme */
+    --text-color: #333; /* Dark text for day theme */
+    --glass-border: rgba(0, 0, 0, 0.1); /* Subtle border for glass effect */
+    --blur-effect: 15px;
+    --glass-background: rgba(255, 255, 255, 0.8); /* Transparent white for glass effect */
+    --glass-shadow: rgba(0, 0, 0, 0.1); /* Light shadow for day theme */
+    --header-background: #ffffff; /* White header background */
+    --header-text-color: #333; /* Dark header text */
+}
+
+[data-theme] {
+    --background-color: rgba(20, 20, 20, 0.9); /* Dark background for night theme */
+    --text-color: #eee; /* Light text for night theme */
+    --glass-border: rgba(255, 255, 255, 0.2); /* Subtle white border for night glass effect */
+    --glass-background: rgba(30, 30, 30, 0.8); /* Transparent dark for night glass effect */
+    --glass-shadow: rgba(255, 255, 255, 0.1); /* Light shadow for night theme */
+    --header-background: rgba(10, 10, 10, 0.8); /* Dark header background for night theme */
+    --header-text-color: #ffffff; /* Light header text */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s;
+}
+
+header, footer {
+    background-color: var(--header-background);
+    color: var(--header-text-color);
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    transition: all 0.3s;
+}
+
+h1 {
+    margin: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px var(--glass-shadow);
+    backdrop-filter: blur(var(--blur-effect));
+    border: 1px solid var(--glass-border);
+    background: var(--glass-background);
+    transition: all 0.3s;
+}
+
+ul, ol {
+    padding-left: 20px;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.mood-images {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.mood-images img {
+    max-width: 200px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.mood-images img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    border-top: 1px solid var(--glass-border);
+    margin-top: 30px;
+}
+
+.toggle-container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+}
+
+.toggle-container label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-color);
+}
